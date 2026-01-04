@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistem Login Aman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-card">
+            <h1>✅ Selamat Datang!</h1>
+            <p class="subtitle">Login berhasil dengan sistem keamanan berlapis</p>
+            
+            <div class="user-info">
+                <h3>Informasi Pengguna</h3>
+                <p><strong>Nama:</strong> <span id="user-name">-</span></p>
+                <p><strong>Email:</strong> <span id="user-email">-</span></p>
+                <p><strong>Status:</strong> <span style="color: #28a745;">Terverifikasi ✓</span></p>
+                <p><strong>Login Terakhir:</strong> <span id="last-login">-</span></p>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <h3>Fitur Keamanan Aktif:</h3>
+                <ul style="text-align: left; margin: 20px auto; max-width: 300px;">
+                    <li>✓ Firebase Authentication</li>
+                    <li>✓ Anti Spam Login (Rate Limiting)</li>
+                    <li>✓ Password Reset Aman</li>
+                    <li>✓ Session Management</li>
+                    <li>✓ Email Verification</li>
+                </ul>
+            </div>
+
+            <button class="btn btn-logout" onclick="handleLogout()">Logout</button>
+        </div>
+    </div>
+
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>
